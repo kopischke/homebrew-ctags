@@ -20,7 +20,7 @@ class CtagsFishman < Formula
       system "autoheader"
       system "autoconf"
     else
-      ohai "This installs ctags 5.8. Use --HEAD to get the fishman fork."
+      opoo "Installing ctags 5.8. Use --HEAD to get the fishman fork."
     end
     system "./configure", "--prefix=#{prefix}",
                           "--enable-macro-patterns",
