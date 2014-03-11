@@ -1,6 +1,6 @@
 require 'formula'
 
-class Ctags < Formula
+class CtagsFishman < Formula
   homepage 'http://ctags.sourceforge.net/'
   url 'https://downloads.sourceforge.net/ctags/ctags-5.8.tar.gz'
   sha1 '482da1ecd182ab39bbdc09f2f02c9fba8cd20030'
