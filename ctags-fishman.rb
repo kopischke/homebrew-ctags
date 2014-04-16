@@ -4,6 +4,7 @@ class CtagsFishman < Formula
   homepage 'https://github.com/fishman/ctags'
   head 'https://github.com/fishman/ctags.git', :branch => 'deploy'
   depends_on :autoconf
+  conflicts_with 'ctags', :because => 'this formula installs the same executable as the regular ctags.'
 
   # fixes http://sourceforge.net/tracker/?func=detail&aid=3247256&group_id=6556&atid=106556
   def patches
