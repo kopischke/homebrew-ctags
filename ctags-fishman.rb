@@ -6,7 +6,7 @@ class CtagsFishman < Formula
   sha1 '482da1ecd182ab39bbdc09f2f02c9fba8cd20030'
 
   head do
-    url 'https://github.com/fishman/ctags.git'
+    url 'https://github.com/fishman/ctags.git', :branch => 'deploy'
     depends_on :autoconf
   end
 
