@@ -1,14 +1,9 @@
 require 'formula'
 
 class CtagsFishman < Formula
-  homepage 'http://ctags.sourceforge.net/'
-  url 'https://downloads.sourceforge.net/ctags/ctags-5.8.tar.gz'
-  sha1 '482da1ecd182ab39bbdc09f2f02c9fba8cd20030'
-
-  head do
-    url 'https://github.com/fishman/ctags.git', :branch => 'deploy'
-    depends_on :autoconf
-  end
+  homepage 'https://github.com/fishman/ctags'
+  head 'https://github.com/fishman/ctags.git', :branch => 'deploy'
+  depends_on :autoconf
 
   # fixes http://sourceforge.net/tracker/?func=detail&aid=3247256&group_id=6556&atid=106556
   def patches
@@ -16,16 +11,13 @@ class CtagsFishman < Formula
   end
 
   def install
-    if build.head?
-      system "autoheader"
-      system "autoconf"
-    else
-      opoo "Installing ctags 5.8. Use --HEAD to get the fishman fork."
-    end
-    system "./configure", "--prefix=#{prefix}",
-                          "--enable-macro-patterns",
-                          "--mandir=#{man}",
-                          "--with-readlib"
+    system "autoheader"
+    system "autoconf"
+    system "./configure",
+           "--prefix=#{prefix}",
+           "--enable-macro-patterns",
+           "--mandir=#{man}",
+           "--with-readlib"
     system "make install"
   end
 
