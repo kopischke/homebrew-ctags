@@ -2,7 +2,7 @@ require 'formula'
 
 class CtagsFishman < Formula
   homepage 'https://github.com/fishman/ctags'
-  head 'https://github.com/fishman/ctags.git', :branch => 'deploy'
+  head 'https://github.com/fishman/ctags.git'
   depends_on :autoconf
   conflicts_with 'ctags', :because => 'this formula installs the same executable as the regular ctags.'
 
