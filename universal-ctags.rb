@@ -1,8 +1,8 @@
 require 'formula'
 
-class CtagsFishman < Formula
-  homepage 'https://github.com/fishman/ctags'
-  head 'https://github.com/fishman/ctags.git'
+class UniversalCtags < Formula
+  homepage 'https://github.com/universal-ctags/ctags'
+  head 'https://github.com/universal-ctags/ctags.git'
   depends_on :autoconf
   conflicts_with 'ctags', :because => 'this formula installs the same executable as the regular ctags.'
 
