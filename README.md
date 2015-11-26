@@ -2,8 +2,7 @@
 
 The last *ctags* release on offer, 5.8, [dates from July 2009][1], and further development on the original repo would be surprising, to say the least. This repo makes [the most active, consistently updated fork of *ctags*][2] available as a tap in [Homebrew][3]. To use, do:
 
-    brew tap kopischke/ctags
-    brew install universal-ctags --HEAD
+    brew install kopischke/ctags/universal-ctags --HEAD
 
 ## Caveat
 
