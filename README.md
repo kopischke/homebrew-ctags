@@ -6,7 +6,7 @@ The last *ctags* release on offer, 5.8, [dates from July 2009][1], and further d
 
 ## Caveat
 
-As the fishman fork has no version scheme, you **have** to use the `--HEAD` option when installing to get the fork – in Homebrew speak, the formula is “head only”. A plain `brew install universal-ctags` will fail.
+As Universal ctags has no version scheme (yet), you **have** to use the `--HEAD` option when installing to get the fork – in Homebrew speak, the formula is “head only”. A plain `brew install universal-ctags` will fail.
 
 [1]: http://ctags.sourceforge.net/
 [2]: https://github.com/universal-ctags/ctags
