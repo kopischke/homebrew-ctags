@@ -17,6 +17,8 @@ class UniversalCtags < Formula
 
   def caveats
     <<-EOS.undent
+      THIS FORMULA IS DEPRECATED. PLEASE USE THE UNIVERSAL-CTAGS TAP INSTEAD.
+
       Under some circumstances, emacs and ctags can conflict. By default,
       emacs provides an executable `ctags` that would conflict with the
       executable of the same name that ctags provides. To prevent this,
